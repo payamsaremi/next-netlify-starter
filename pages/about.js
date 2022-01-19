@@ -3,18 +3,18 @@ import Header from '@components/Header'
 import Footer from '@components/Footer'
 import Link from 'next/link'
 
-export default function Home() {
+export default function About() {
   return (
     <div className="make__middle">
       <Head>
-        <title>New Blog</title>
+        <title>About</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main>
-        <Header title="NEW BLOG!" color="green"/>
+        <Header title="About Me" color="blue"/>
         <p className="mt-5">
-          Learn more <Link href={`/about`}><a className='font-bold hover:bg-gray-100 p-2 rounded-lg underline'>About</a></Link>
+          Not what you were looking for? <Link href={`/`}><a className='font-bold hover:bg-gray-100 p-2 rounded-lg underline'>Go Back</a></Link>
         </p>
       </main>
 
